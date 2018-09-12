@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcpspace.SpringMyBatis_day01.dao.UsersMapper">
+
+    <select id="findAll" resultMap="usersMap">
+        SELECT uId,userName,userPwd,realName FROM user
+    </select>
+
+    <resultMap id="usersMap" type="com.zcpspace.SpringMyBatis_day01.entity.Users">
+        <id property="uId" column="uId"/>
+        <result property="userName" column="userName"/>
+        <result property="userPed" column="userPwd"/>
+        <result property="realName" column="realName"/>
+    </resultMap>
+
+</mapper>

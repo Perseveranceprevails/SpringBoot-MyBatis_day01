@@ -1,0 +1,18 @@
+
+code1
+{
+    border: 2px red solid;
+    width: 800px;
+    margin: 0px auto;
+}
+table{
+    table-layout: fixed;
+    width: 100%;
+}
+td
+{
+    border: 1px red dashed;
+    width: 1px;
+    white-space: nowrap; /* 自适应宽度*/
+    word-break:  keep-all; /* 避免长单词截断，保持全部 */
+}
